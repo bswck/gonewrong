@@ -4,16 +4,16 @@ import sys
 
 TYPE_CHECKING = False
 
-# YORE: EOL 3.10: Replace block with lines 9-10
+# YORE: BUMP 3.10: Replace block with lines 9-10
 if sys.version_info >= (3, 11):
     BaseExceptionGroup: TypeAlias = BaseExceptionGroup  # noqa: PLW0127, F821
     ExceptionGroup: TypeAlias = ExceptionGroup  # noqa: PLW0127, F821
 else:
     from exceptiongroup import BaseExceptionGroup, ExceptionGroup
 
-# YORE: EOL 3.12: Remove block
+# YORE: BUMP 3.12: Remove block
 if TYPE_CHECKING:
-    # YORE: EOL 3.9: Replace block with line 20
+    # YORE: BUMP 3.9: Replace block with line 20
     if sys.version_info >= (3, 10):
         from typing import TypeAlias
     else:
