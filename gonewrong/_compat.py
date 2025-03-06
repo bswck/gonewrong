@@ -13,7 +13,7 @@ else:
 
 # YORE: BUMP 3.12: Remove block
 if TYPE_CHECKING:
-    # YORE: BUMP 3.9: Replace block with line 20
+    # YORE: BUMP 3.9: Replace block with line 4
     if sys.version_info >= (3, 10):
         from typing import TypeAlias
     else:
